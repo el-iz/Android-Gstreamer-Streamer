@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <com.gst_sdk_tutorials.tutorial_5.GStreamerSurfaceView
+        android:id="@+id/surface_video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:indeterminate="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageButton
+            android:id="@+id/button_play"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/button_play"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_media_play"
+            android:text="@string/button_play" />
+
+        <TextView
+            android:id="@+id/textview_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:gravity="center_horizontal"
+            android:width="300dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <ImageButton
+            android:id="@+id/button_stop"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/button_stop"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_media_pause"
+            android:text="@string/button_stop" />
+
+    </LinearLayout>
+
+</FrameLayout>
